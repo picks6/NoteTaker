@@ -5,8 +5,6 @@ const api = require('./routes/route_api');
 const html = require('./routes/route_html');
 const path = require('path');
 
-
-app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 app.use('/api', api);
